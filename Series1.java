@@ -1,33 +1,35 @@
 import java.util.Scanner;
 
-class Loop{
+
+class Series1{
     public static void main(String [] args)
     {
+        
         Scanner in = new Scanner(System.in);
         
-        int f, l, sum;
-        
+        int F, L, Sum;
+        Sum = 0;
         
         System.out.print("Please Enter the First Value: ");
-        f = in.nextInt();
+        F = in.nextInt();
         
         System.out.print("Please Enter the Last Value: ");
-        l = in.nextInt();
+        L = in.nextInt();
         
-        sum = 0;
-        
-        for (int i = f; i <= l; i++)
+        for (int i = F; i <= L; i++)
         {
             System.out.println(i);
-            sum = sum + i;
+            
+            Sum = Sum + i;
+            
         }
         
-        
-        System.out.println("The Summation is: "+sum);
-        
+        System.out.println("The Result is: "+Sum);
         
         
         
         
     }
+    
+    
 }
