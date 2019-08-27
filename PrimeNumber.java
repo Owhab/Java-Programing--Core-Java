@@ -1,34 +1,32 @@
 import java.util.Scanner;
 
-class Practise
+class PrimeNumber
 {
-    public static void main(String []args)
+    public static void main(String [] args)
     {
         Scanner in = new Scanner(System.in);
         
         int x, y, count = 0;
         
-        System.out.print("Please Enter the first Number: ");
+        System.out.print("Enter the first number: ");
         x = in.nextInt();
         
-        System.out.print("Please ENter the last Number: ");
+        System.out.print("Enter the last number: ");
         y = in.nextInt();
         
-        for(int i = x; i <= y; i++)
+        for (int i = x; i <= y; i++)
         {
-            for(int j = 2; j <= i-1; j++)
+            for (int j = 2; j <= i - 1; j++)
             {
-                if(i%j==0)
+                if(i%j == 0)
+                {
                     count++;
-                break;
-                    
-                
+                    break;
+                }
             }
-            
             if(count==0)
                 System.out.println(i);
             count = 0;
-            
         }
     }
 }
