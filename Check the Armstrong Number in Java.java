@@ -21,7 +21,7 @@ class Armstrong
         {
             r = temp % 10;
             sum = sum + r * r * r;
-            temp = temp / 10;
+            temp = temp /10;
         }
         
         if(sum == num)
